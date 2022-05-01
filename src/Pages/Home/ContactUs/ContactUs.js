@@ -3,7 +3,7 @@ import './ContactUs.css'
 
 const ContactUs = () => {
     return (
-        <div className='container shadow-lg py-5 contact-us-container'>
+        <div className='container shadow-lg contact-us-container'>
             <h2 className='mb-4'>Contact Us</h2>
             <form className='mx-auto contact-form'>
                 <input type="text" placeholder='Name' />
