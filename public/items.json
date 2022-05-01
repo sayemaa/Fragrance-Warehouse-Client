@@ -1,56 +1,137 @@
 [
     {
         "id": 1,
-        "name": "ENGINE DIAGNOSTIC",
+        "name": "BELLE",
         "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg",
-        "quantity": 5,
-        "supplier": "United Perfumes"
+        "description": "This fragrance is perfect for any occasion. It will surely make you smile at first spray.",
+        "img": "https://i.ibb.co/RPCLk2p/item1.jpg",
+        "quantity": 2,
+        "supplier": "LANCOME"
     },
     {
         "id": 2,
-        "name": "WHEEL ALIGNMENT",
+        "name": "DAISY INTENSE",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg",
-        "quantity": 5,
-        "supplier": "United Perfumes"
+        "description": "A classic daisy perfume with a fragrance that is vibrant with sparkling bursts of strawberry and pear revealing a sweet honey and elegant rosebud heart.",
+        "img": "https://i.ibb.co/743cP7N/item2.jpg",
+        "quantity": 3,
+        "supplier": "MARC JACOBS"
     },
     {
         "id": 3,
-        "name": "OIL CHANGING",
+        "name": "MADEMOISELLE",
         "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ harum ametipsa.",
-        "img": "https://i.ibb.co/Yh04YVw/3.jpg",
-        "quantity": 10,
-        "supplier": "United Perfumes"
+        "description": "An ambery fragrance with a strong personality, yet surprisingly fresh.",
+        "img": "https://i.ibb.co/vPf3wq6/item3.jpg",
+        "quantity": 2,
+        "supplier": "CHANEL"
     },
     {
         "id": 4,
-        "name": "BRAKE REPARING",
+        "name": "CODE",
         "price": "180",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg",
-        "quantity": 2,
-        "supplier": "United Perfumes"
+        "description": "Discover the new Armani Code, a men's perfume with a sensual oriental woody fragrance.",
+        "img": "https://i.ibb.co/fMCgD6B/item4.jpg",
+        "quantity": 4,
+        "supplier": "ARMANI"
     },
     {
         "id": 5,
-        "name": "WASH AND GLASSING",
+        "name": "ALIEN GODDESS",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/FgQ3jXp/5.jpg",
-        "quantity": 7,
-        "supplier": "United Perfumes"
+        "description": "Introducing Alien Goddess, the new Alien feminine perfume by MUGLER. The embodiment of mystical femininity bringing hope and positivity to the world.",
+        "img": "https://i.ibb.co/t2GCPv8/item5.jpg",
+        "quantity": 5,
+        "supplier": "MUGLER"
     },
     {
         "id": 6,
-        "name": "COMPLETE ANALYSIS",
+        "name": "LIBRE",
         "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/zJy5ZDd/6.jpg",
+        "description": "The structure of the original LIBRE composition celebrates the signature tension present in all YSL fragrances.",
+        "img": "https://i.ibb.co/sq58T2C/item6.jpg",
         "quantity": 3,
-        "supplier": "United Perfumes"
+        "supplier": "YVES SAINT LAURENT"
+    },
+    {
+        "id": 7,
+        "name": "ROSE GOLD",
+        "price": "300",
+        "description": "The fragrance opens with a fruity blackcurrant paired with pink pepper and lychee fruit for a sparkling, playful top note.",
+        "img": "https://i.ibb.co/jM00jVL/item7.jpg",
+        "quantity": 5,
+        "supplier": "TIFFANY"
+    },
+    {
+        "id": 8,
+        "name": "WONDERLUST FRESH",
+        "price": "100",
+        "description": "An enticing warmth builds from within the fragrance. On top, the sparkle of Pink Grapefruit imparts a dazzling brilliance.",
+        "img": "https://i.ibb.co/QmHhH6h/item8.jpg",
+        "quantity": 2,
+        "supplier": "MICHAEL KORS"
+    },
+    {
+        "id": 9,
+        "name": "MY WAY",
+        "price": "150",
+        "description": "A fragrance for a new generation. MY WAY is a contemporary floral fragrance with a fusion of white flowers at its heart.",
+        "img": "https://i.ibb.co/GMm8CGN/item9.jpg",
+        "quantity": 6,
+        "supplier": "ARMANI"
+    },
+    {
+        "id": 10,
+        "name": "LUMIÈRE",
+        "price": "180",
+        "description": "A beautiful fragrance with a hint of jasmine.",
+        "img": "https://i.ibb.co/q1HyM6D/item10.jpg",
+        "quantity": 2,
+        "supplier": "ELIE SAAB"
+    },
+    {
+        "id": 11,
+        "name": "ALIVE",
+        "price": "100",
+        "description": "Inspired by living life to the fullest and finding your own way, ALIVE empowers women on their path to success.",
+        "img": "https://i.ibb.co/C6kjphc/item11.jpg",
+        "quantity": 4,
+        "supplier": "HUGO BOSS"
+    },
+    {
+        "id": 12,
+        "name": "OLYMPEA",
+        "price": "300",
+        "description": "Featuring hints of on-trend rose gold-tone, it'll stand out among your fragrance collection.",
+        "img": "https://i.ibb.co/TYgk5pR/item12.jpg",
+        "quantity": 3,
+        "supplier": "PACO RABANNE"
+    },
+    {
+        "id": 13,
+        "name": "BLACK XS",
+        "price": "180",
+        "description": "This scent stands out with a long-lasting, fresh and sweet rose fragrance.",
+        "img": "https://i.ibb.co/pb7XCYs/item13.jpg",
+        "quantity": 2,
+        "supplier": "PACO RABANNE"
+    },
+    {
+        "id": 14,
+        "name": "OLYMPEA BLOSSOM",
+        "price": "100",
+        "description": "Olympea Blossom stands out with a long-lasting, fresh and sweet peach fragrance.",
+        "img": "https://i.ibb.co/DVRW5DZ/item14.jpg",
+        "quantity": 5,
+        "supplier": "PACO RABANNE"
+    },
+    {
+        "id": 15,
+        "name": "MON PARIS",
+        "price": "300",
+        "description": "This perfume captivates from the very first time it is worn thanks to its ultra-pure radiance.",
+        "img": "https://i.ibb.co/0YsZnS8/item15.jpg",
+        "quantity": 3,
+        "supplier": "YVES SAINT LAURENT"
     }
 ]

@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "name": "Patricia Lebsack",
+        "picture": "https://randomuser.me/api/portraits/women/76.jpg",
+        "post": "Great service. I love how I can find all the original perfume brands here.",
+        "ratings": "5/5"
+    },
+    {
+        "id": "2",
+        "name": "Ervin Howell",
+        "picture": "https://randomuser.me/api/portraits/men/9.jpg",
+        "post": "I like a strong perfume and this place never disappoints me.",
+        "ratings": "5/5"
+    },
+    {
+        "id": "3",
+        "name": "Glenna Reichert",
+        "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+        "post": "This place has such a variety of beautiful perfumes coated in lovely bottles.",
+        "ratings": "4.7/5"
+    }
+]
