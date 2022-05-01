@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init'
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -8,12 +8,13 @@ import './Login.css'
 
 const Login = () => {
     const navigate = useNavigate();
+    let errorMessage;
     const [
-        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useSignInWithEmailAndPassword(auth);
 
 
     if (user) {
@@ -21,12 +22,16 @@ const Login = () => {
         navigate('/home');
     }
 
+    if (error) {
+        errorMessage = <p className='text-danger text-center'>Error: {error?.message}</p>
+    }
+
     const handleLogin = (event) => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-        createUserWithEmailAndPassword(email, password);
+        signInWithEmailAndPassword(email, password);
     }
 
     const navigateToSignUp = (event) => {
@@ -39,20 +44,16 @@ const Login = () => {
             <Form onSubmit={handleLogin}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label >Email address</Form.Label>
-                    <Form.Control type="email" name="email" placeholder="Enter email" />
-                    {/* <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                </Form.Text> */}
+                    <Form.Control type="email" name="email" placeholder="Enter Email" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" name="password" placeholder="Password" />
+                    <Form.Control type="password" name="password" placeholder="Password" required />
                 </Form.Group>
-                {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group> */}
-                <Button className='d-block mx-auto login-btn' type="submit">
+                {errorMessage}
+
+                <Button className='d-block mx-auto login-btn mb-3' type="submit">
                     Login
                 </Button>
             </Form>
