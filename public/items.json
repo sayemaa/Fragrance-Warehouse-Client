@@ -5,7 +5,7 @@
         "price": "300",
         "description": "This fragrance is perfect for any occasion. It will surely make you smile at first spray.",
         "img": "https://i.ibb.co/RPCLk2p/item1.jpg",
-        "quantity": 2,
+        "quantity": 15,
         "supplier": "LANCOME"
     },
     {
@@ -14,7 +14,7 @@
         "price": "100",
         "description": "A classic daisy perfume with a fragrance that is vibrant with sparkling bursts of strawberry and pear revealing a sweet honey and elegant rosebud heart.",
         "img": "https://i.ibb.co/743cP7N/item2.jpg",
-        "quantity": 3,
+        "quantity": 10,
         "supplier": "MARC JACOBS"
     },
     {
@@ -23,7 +23,7 @@
         "price": "150",
         "description": "An ambery fragrance with a strong personality, yet surprisingly fresh.",
         "img": "https://i.ibb.co/vPf3wq6/item3.jpg",
-        "quantity": 2,
+        "quantity": 16,
         "supplier": "CHANEL"
     },
     {
@@ -32,7 +32,7 @@
         "price": "180",
         "description": "Discover the new Armani Code, a men's perfume with a sensual oriental woody fragrance.",
         "img": "https://i.ibb.co/fMCgD6B/item4.jpg",
-        "quantity": 4,
+        "quantity": 9,
         "supplier": "ARMANI"
     },
     {
@@ -41,7 +41,7 @@
         "price": "100",
         "description": "Introducing Alien Goddess, the new Alien feminine perfume by MUGLER. The embodiment of mystical femininity bringing hope and positivity to the world.",
         "img": "https://i.ibb.co/t2GCPv8/item5.jpg",
-        "quantity": 5,
+        "quantity": 20,
         "supplier": "MUGLER"
     },
     {
@@ -50,7 +50,7 @@
         "price": "300",
         "description": "The structure of the original LIBRE composition celebrates the signature tension present in all YSL fragrances.",
         "img": "https://i.ibb.co/sq58T2C/item6.jpg",
-        "quantity": 3,
+        "quantity": 18,
         "supplier": "YVES SAINT LAURENT"
     },
     {
@@ -59,7 +59,7 @@
         "price": "300",
         "description": "The fragrance opens with a fruity blackcurrant paired with pink pepper and lychee fruit for a sparkling, playful top note.",
         "img": "https://i.ibb.co/jM00jVL/item7.jpg",
-        "quantity": 5,
+        "quantity": 22,
         "supplier": "TIFFANY"
     },
     {
@@ -68,7 +68,7 @@
         "price": "100",
         "description": "An enticing warmth builds from within the fragrance. On top, the sparkle of Pink Grapefruit imparts a dazzling brilliance.",
         "img": "https://i.ibb.co/QmHhH6h/item8.jpg",
-        "quantity": 2,
+        "quantity": 24,
         "supplier": "MICHAEL KORS"
     },
     {
@@ -77,7 +77,7 @@
         "price": "150",
         "description": "A fragrance for a new generation. MY WAY is a contemporary floral fragrance with a fusion of white flowers at its heart.",
         "img": "https://i.ibb.co/GMm8CGN/item9.jpg",
-        "quantity": 6,
+        "quantity": 16,
         "supplier": "ARMANI"
     },
     {
@@ -86,7 +86,7 @@
         "price": "180",
         "description": "A beautiful fragrance with a hint of jasmine.",
         "img": "https://i.ibb.co/q1HyM6D/item10.jpg",
-        "quantity": 2,
+        "quantity": 12,
         "supplier": "ELIE SAAB"
     },
     {
@@ -95,7 +95,7 @@
         "price": "100",
         "description": "Inspired by living life to the fullest and finding your own way, ALIVE empowers women on their path to success.",
         "img": "https://i.ibb.co/C6kjphc/item11.jpg",
-        "quantity": 4,
+        "quantity": 14,
         "supplier": "HUGO BOSS"
     },
     {
@@ -104,7 +104,7 @@
         "price": "300",
         "description": "Featuring hints of on-trend rose gold-tone, it'll stand out among your fragrance collection.",
         "img": "https://i.ibb.co/TYgk5pR/item12.jpg",
-        "quantity": 3,
+        "quantity": 23,
         "supplier": "PACO RABANNE"
     },
     {
@@ -113,7 +113,7 @@
         "price": "180",
         "description": "This scent stands out with a long-lasting, fresh and sweet rose fragrance.",
         "img": "https://i.ibb.co/pb7XCYs/item13.jpg",
-        "quantity": 2,
+        "quantity": 8,
         "supplier": "PACO RABANNE"
     },
     {
@@ -122,7 +122,7 @@
         "price": "100",
         "description": "Olympea Blossom stands out with a long-lasting, fresh and sweet peach fragrance.",
         "img": "https://i.ibb.co/DVRW5DZ/item14.jpg",
-        "quantity": 5,
+        "quantity": 15,
         "supplier": "PACO RABANNE"
     },
     {
@@ -131,7 +131,7 @@
         "price": "300",
         "description": "This perfume captivates from the very first time it is worn thanks to its ultra-pure radiance.",
         "img": "https://i.ibb.co/0YsZnS8/item15.jpg",
-        "quantity": 3,
+        "quantity": 19,
         "supplier": "YVES SAINT LAURENT"
     }
 ]

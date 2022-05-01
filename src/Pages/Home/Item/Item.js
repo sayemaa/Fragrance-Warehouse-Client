@@ -9,11 +9,11 @@ const Item = ({ item }) => {
                 <img src={img} className="card-img-top w-75" alt="..." />
                 <div className="card-body">
                     <h4>{name}</h4>
-                    <h5>Price: ${price}</h5>
+                    <h4 className='fw-normal'>${price}</h4>
+                    <h6>Supplier: {supplier}</h6>
                     <p>{description.slice(0, 80)}</p>
-                    <p>Supplier: {supplier}</p>
-                    <p>Quantity: {quantity}</p>
-                    <button className='update-btn mb-2'>UPDATE</button>
+                    <h6 className='fw-normal'>Quantity: {quantity}</h6>
+                    <button className='update-btn mb-2 mt-3'>UPDATE</button>
                 </div>
             </div>
         </div>

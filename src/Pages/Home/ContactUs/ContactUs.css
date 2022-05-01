@@ -24,7 +24,7 @@
 
 .submit-btn{
     border: none;
-    background-color: #fdb733;
+    background-color: #E02C6D;
     color: white;
     font-weight: 500;
     border-radius: 10px;
@@ -32,5 +32,27 @@
 }
 
 .submit-btn:hover{
-    background-color: #fdb6339d;
+    background-color: #EB6998;
+}
+
+ /* Responsive */
+
+@media only screen and (max-width:576px) {
+    .contact-us-container{
+        width: 90%;
+        padding: 70px 0
+    }
+    .contact-form input, textarea{
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .contact-us-container{
+        width: 75%;
+        padding: 70px 0
+    }
+    .contact-form input, textarea{
+        width: 75%;
+    }
 }

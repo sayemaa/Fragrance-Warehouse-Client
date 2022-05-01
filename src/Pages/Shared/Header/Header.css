@@ -1,12 +1,13 @@
-.update-btn{
+.signout-btn{
+    width: 100px;
     border: none;
     background-color: #E02C6D;
     color: white;
     font-weight: 500;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 7px 15px;
 }
 
-.update-btn:hover{
+.signout-btn:hover{
     background-color: #EB6998;
 }
