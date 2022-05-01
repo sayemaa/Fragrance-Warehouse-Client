@@ -1,0 +1,12 @@
+.update-btn{
+    border: none;
+    background-color: #fdb733;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+
+.update-btn:hover{
+    background-color: #fdb6339d;
+}

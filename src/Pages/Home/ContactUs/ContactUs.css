@@ -1,0 +1,35 @@
+.contact-us-container{
+    margin-top: 150px;
+    width: 70%;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.contact-form input, textarea{
+    width: 50%;
+    margin-bottom: 15px;
+    border-radius: 13px;
+    border: 1px solid rgb(188, 188, 188);
+    padding: 5px 10px;
+}
+
+.contact-form input {
+    height: 35px;
+}
+
+.contact-form textarea{
+    height: 70px;
+}
+
+.submit-btn{
+    border: none;
+    background-color: #fdb733;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+
+.submit-btn:hover{
+    background-color: #fdb6339d;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Item.css'
 
 const Item = ({ item }) => {
     const { name, description, img, price, quantity, supplier } = item;
@@ -12,7 +13,7 @@ const Item = ({ item }) => {
                     <p>{description.slice(0, 80)}</p>
                     <p>Supplier: {supplier}</p>
                     <p>Quantity: {quantity}</p>
-                    <button className='mb-2 border-0 btn-danger py-2 px-3 rounded'>UPDATE</button>
+                    <button className='update-btn mb-2'>UPDATE</button>
                 </div>
             </div>
         </div>
