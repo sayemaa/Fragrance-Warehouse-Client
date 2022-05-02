@@ -1,3 +1,8 @@
+.input-fields{
+    width: 50%;
+    margin: auto;
+}
+
 .login-btn{
     width: 100px;
     border: none;
@@ -15,4 +20,18 @@
 .links{
     text-decoration: none;
     color: rgb(255, 81, 159);
+}
+
+/* Responsive */
+
+@media only screen and (max-width:576px) {
+    .input-fields{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .input-fields{
+        width: 75%;
+    }
 }
