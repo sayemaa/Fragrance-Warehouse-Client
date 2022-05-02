@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
+import Loading from '../../Shared/Loading/Loading';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -26,6 +27,10 @@ const Login = () => {
     if (user) {
         // console.log('user', user);
         navigate('/home');
+    }
+
+    if (loading || sending) {
+        return <Loading></Loading>
     }
 
     if (error) {

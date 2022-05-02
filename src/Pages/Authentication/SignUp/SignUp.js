@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const SignUp = () => {
@@ -19,6 +19,10 @@ const SignUp = () => {
 
     if (user) {
         navigate('/home');
+    }
+
+    if (loading) {
+        return <Loading></Loading>
     }
 
     const handleSignUp = (event) => {
