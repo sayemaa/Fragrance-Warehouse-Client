@@ -6,17 +6,17 @@ const ItemsInventory = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('items.json')
+        fetch('http://localhost:5000/inventory')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
     return (
-        <div className='my-5 container text-center'>
+        <div className='my-5 container inventory-section text-center'>
             <h2 className='mb-5'>Inventory</h2>
             <div className="row items-container">
                 {
                     items.slice(0, 6).map(item => <Item
-                        key={item.id}
+                        key={item._id}
                         item={item}
                     ></Item>)
                 }

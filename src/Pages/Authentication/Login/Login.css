@@ -6,7 +6,7 @@
 .login-btn{
     width: 100px;
     border: none;
-    background-color: #E02C6D;
+    background-color: #FF9670;
     color: white;
     font-weight: 500;
     border-radius: 20px;
@@ -14,12 +14,12 @@
 }
 
 .login-btn:hover{
-    background-color: #EB6998;
+    background-color: #FF9670A0;
 }
 
 .links{
     text-decoration: none;
-    color: rgb(255, 81, 159);
+    color: #FC6D38;
 }
 
 /* Responsive */

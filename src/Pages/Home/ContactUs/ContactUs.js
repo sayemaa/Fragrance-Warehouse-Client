@@ -12,7 +12,7 @@ const ContactUs = () => {
                 <br />
                 <textarea placeholder='Your Message' />
                 <br />
-                <button className='submit-btn'>Submit</button>
+                <button className='submit-btn'>SUBMIT</button>
             </form>
         </div>
     );

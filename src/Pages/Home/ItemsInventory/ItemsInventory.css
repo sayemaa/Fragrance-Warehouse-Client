@@ -1,3 +1,7 @@
+.inventory-section{
+    width: 75%;
+}
+
 .items-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);

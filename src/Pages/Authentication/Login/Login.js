@@ -3,7 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -11,9 +11,13 @@ import './Login.css'
 import Loading from '../../Shared/Loading/Loading';
 
 const Login = () => {
-    const navigate = useNavigate();
     const emailRef = useRef('');
+    const navigate = useNavigate();
+    const location = useLocation();
+
     let errorMessage;
+    let from = location.state?.from?.pathname || "/";
+
     const [
         signInWithEmailAndPassword,
         user,
@@ -26,7 +30,7 @@ const Login = () => {
 
     if (user) {
         // console.log('user', user);
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
     if (loading || sending) {

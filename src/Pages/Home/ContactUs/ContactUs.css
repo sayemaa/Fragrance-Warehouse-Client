@@ -24,7 +24,7 @@
 
 .submit-btn{
     border: none;
-    background-color: #E02C6D;
+    background-color: #FF9670;
     color: white;
     font-weight: 500;
     border-radius: 10px;
@@ -32,7 +32,7 @@
 }
 
 .submit-btn:hover{
-    background-color: #EB6998;
+    background-color: #FF9670A0;
 }
 
  /* Responsive */
@@ -40,7 +40,7 @@
 @media only screen and (max-width:576px) {
     .contact-us-container{
         width: 90%;
-        padding: 70px 0
+        padding: 30px 0
     }
     .contact-form input, textarea{
         width: 85%;

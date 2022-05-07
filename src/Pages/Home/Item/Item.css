@@ -1,6 +1,10 @@
+.card-container{
+    width: 98%;
+}
+
 .update-btn{
     border: none;
-    background-color: #E02C6D;
+    background-color: #FF9670;
     color: white;
     font-weight: 500;
     border-radius: 10px;
@@ -8,5 +12,19 @@
 }
 
 .update-btn:hover{
-    background-color: #EB6998;
+    background-color: #FF9670A0;
+}
+
+/* Responsive */
+
+@media only screen and (max-width:576px) {
+    .card-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .card-container{
+        width: 95%;
+    }
 }

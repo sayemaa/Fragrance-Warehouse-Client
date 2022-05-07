@@ -3,8 +3,8 @@ import React from 'react';
 const Review = ({ review }) => {
     const { name, picture, post, ratings } = review;
     return (
-        <div className="w-75 mx-auto mb-2 shadow rounded">
-            <div className="border-0 pt-3 px-1 h-100">
+        <div className="w-100 mx-auto mb-2 shadow rounded">
+            <div className="border-0 py-4 h-100">
                 <img src={picture} className="rounded-pill" alt="..." />
                 <div className="card-body">
                     <h4>{name}</h4>

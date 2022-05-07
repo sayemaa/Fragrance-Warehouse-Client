@@ -12,7 +12,7 @@ const Reviews = () => {
     }, [])
 
     return (
-        <div className='text-center container my-5'>
+        <div className='text-center w-75 container my-5'>
             <h2 className='mb-5'>Reviews</h2>
             <div className="row reviews-container">
                 {
