@@ -9,6 +9,8 @@ import { toast, ToastContainer } from 'react-toastify';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
 import Loading from '../../Shared/Loading/Loading';
+import axios from 'axios';
+import useToken from '../../../hooks/useToken';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -27,9 +29,9 @@ const Login = () => {
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(
         auth)
+    const [token] = useToken(user);
 
-    if (user) {
-        // console.log('user', user);
+    if (token) {
         navigate(from, { replace: true });
     }
 
@@ -41,12 +43,15 @@ const Login = () => {
         errorMessage = <p className='text-danger text-center'>Error: {error?.message}</p>
     }
 
-    const handleLogin = (event) => {
+    const handleLogin = async (event) => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-        signInWithEmailAndPassword(email, password);
+        await signInWithEmailAndPassword(email, password);
+        const { data } = await axios.post('https://fast-lowlands-39390.herokuapp.com/login', { email })
+        console.log(data);
+        localStorage.setItem('accessToken', data.accessToken);
     }
 
     const navigateToSignUp = () => {

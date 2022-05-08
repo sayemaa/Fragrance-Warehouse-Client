@@ -1,22 +1,33 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast, ToastContainer } from 'react-toastify';
 import './AddItem.css'
+import auth from '../../firebase.init';
+import axios from 'axios';
 
 const AddItem = () => {
+    const [user] = useAuthState(auth)
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         // console.log(data);
-        const url = `http://localhost:5000/inventory`;
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-            .then(res => res.json())
-            .then(result => {
-                console.log(result)
+        const item = {
+            email: user?.email,
+            name: data.name,
+            supplier: data.supplier,
+            description: data.description,
+            price: data.price,
+            quantity: data.quantity,
+            img: data.img
+        }
+        axios.post('https://fast-lowlands-39390.herokuapp.com/inventory', item)
+            .then(response => {
+                // console.log(response);
+                const { data } = response;
+                if (data.insertedId) {
+                    toast('Item has been added!');
+
+                }
             })
     }
 
@@ -32,6 +43,7 @@ const AddItem = () => {
                 <input className='mb-2 form-control' placeholder='Photo URL' type="text" {...register("img")} />
                 <button className='d-block mx-auto add-item-btn'>Add Item</button>
             </form>
+            <ToastContainer />
         </div>
     );
 };

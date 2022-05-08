@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import useToken from '../../../hooks/useToken';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -16,8 +17,9 @@ const SignUp = () => {
         loading
     ] = useCreateUserWithEmailAndPassword(auth,
         { sendEmailVerification: true });
+    const [token] = useToken(user);
 
-    if (user) {
+    if (token) {
         navigate('/home');
     }
 

@@ -1,26 +1,24 @@
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useInventory from '../../../hooks/useInventory';
+import Loading from '../../Shared/Loading/Loading';
 import Item from '../Item/Item';
 import './ItemsInventory.css'
 
 const ItemsInventory = () => {
-    const [items, setItems] = useState([]);
+    const [inventory, setInventory] = useInventory();
 
-    useEffect(() => {
-        fetch('http://localhost:5000/inventory')
-            .then(res => res.json())
-            .then(data => setItems(data))
-    }, [])
+    let loading = <Loading />
 
     return (
         <div className='my-5 container inventory-section text-center'>
             <h2 className='mb-5'>Inventory</h2>
             <div className="row items-container">
                 {
-                    items.slice(0, 6).map(item => <Item
+                    inventory.length === 0 ? loading : inventory.slice(0, 6).map(item => <Item
                         key={item._id}
                         item={item}
                     ></Item>)

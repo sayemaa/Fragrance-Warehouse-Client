@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Button, Modal, Form } from 'react-bootstrap';
 import './UpdateItem.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const UpdateItem = () => {
     const { itemId } = useParams();
@@ -12,7 +14,7 @@ const UpdateItem = () => {
     const handleShow = () => setShow(true);
 
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${itemId}`;
+        const url = `https://fast-lowlands-39390.herokuapp.com/inventory/${itemId}`;
 
         fetch(url)
             .then(res => res.json())
@@ -31,7 +33,7 @@ const UpdateItem = () => {
         const delivered = { quantity: newQuantity.toString() }
 
         if (delivered.quantity >= 0) {
-            const url = `http://localhost:5000/inventory/${itemId}`;
+            const url = `https://fast-lowlands-39390.herokuapp.com/inventory/${itemId}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -53,7 +55,7 @@ const UpdateItem = () => {
         const addAmount = parseInt(item.quantity) + parseInt(amount)
         const restock = { quantity: addAmount.toString() }
 
-        const url = `http://localhost:5000/inventory/${itemId}`;
+        const url = `https://fast-lowlands-39390.herokuapp.com/inventory/${itemId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -69,9 +71,9 @@ const UpdateItem = () => {
     }
 
     return (
-        <div className='text-center mt-2 mb-5'>
+        <div className='text-center mt-2 mb-5 container'>
             <h2>Update Item</h2>
-            <div className='update-item-container mt-4 mb-5 mx-auto shadow pb-4'>
+            <div className='update-item-container mt-4 mb-3 mx-auto shadow pb-4'>
                 <img className="w-50 mb-4" src={item.img} alt="" />
                 <h4 className='mb-3'>{item.name}</h4>
                 <h4 className='fw-normal mb-3'>${item.price}</h4>
@@ -107,8 +109,10 @@ const UpdateItem = () => {
                         <Button className="restock-btn mx-1" type="submit" onClick={handleClose}>Restock</Button>
                     </Form>
                 </Modal.Body>
-
             </Modal>
+            <div className='d-flex justify-content-end'>
+                <Button as={Link} to="/manage" className='manage-inventory-link fw-bold my-5'>Manage Inventory <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></Button>
+            </div>
         </div>
 
     );
