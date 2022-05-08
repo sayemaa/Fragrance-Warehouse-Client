@@ -1,0 +1,13 @@
+.add-item-btn{
+    width: 105px;
+    border: none;
+    background-color: #FF9670;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 7px 15px;
+}
+
+.add-item-btn:hover{
+    background-color: #FF9670A0;
+}

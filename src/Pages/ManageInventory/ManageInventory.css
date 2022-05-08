@@ -1,0 +1,48 @@
+.options-btn{
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+
+.add-item-link{
+    font-size: 19px;
+    border: none;
+    background-color:  white;
+    color: #FF9670;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+
+.add-item-link:hover{
+    border: none;
+    background-color: white;
+    color: #FF9670;
+}
+
+/* Responsive */
+
+@media only screen and (max-width:576px) {
+    html, body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .options-btn{
+        margin: 7px;
+    }
+
+    .options-btn-container{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    html, body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}

@@ -11,9 +11,7 @@ const Item = ({ item }) => {
     }
 
     let sold;
-    if (parseInt(item.quantity) === 0) {
-        sold = <h6 className='d-inline text-danger fw-bold'>SOLD</h6>
-    }
+    sold = <h6 className='d-inline text-danger fw-bold'>SOLD</h6>
 
     return (
         <div className="card-container mx-auto mb-2 shadow rounded">
@@ -24,7 +22,7 @@ const Item = ({ item }) => {
                     <h4 className='fw-normal'>${price}</h4>
                     <h6>Supplier: {supplier}</h6>
                     <p>{description.slice(0, 80)}</p>
-                    <h6 className='fw-normal'>Quantity: {parseInt(item.quantity) === 0 ? sold : item.quantity}</h6>
+                    <h6 className='fw-normal'>Quantity: {parseInt(quantity) === 0 ? sold : quantity}</h6>
                     <button onClick={() => { navigateToUpdateItem(_id) }} className='update-btn mb-2 mt-3'>UPDATE</button>
                 </div>
             </div>

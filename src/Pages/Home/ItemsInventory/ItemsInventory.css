@@ -8,6 +8,22 @@
     grid-gap: 20px;
 }
 
+.manage-inventory-link{
+    font-size: 19px;
+    border: none;
+    background-color:  white;
+    color: #FF9670;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+
+.manage-inventory-link:hover{
+    border: none;
+    background-color: white;
+    color: #FF9670;
+}
+
 /* Responsive */
 
 @media only screen and (max-width:576px) {

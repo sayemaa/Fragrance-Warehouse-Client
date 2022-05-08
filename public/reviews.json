@@ -10,14 +10,14 @@
         "id": "2",
         "name": "Ervin Howell",
         "picture": "https://randomuser.me/api/portraits/men/9.jpg",
-        "post": "I like a strong perfume and this place never disappoints me.",
+        "post": "All kinds of perfumes are available here with a very reasonable price",
         "ratings": "5/5"
     },
     {
         "id": "3",
         "name": "Glenna Reichert",
         "picture": "https://randomuser.me/api/portraits/women/12.jpg",
-        "post": "This place has such a variety of beautiful perfumes coated in lovely bottles.",
-        "ratings": "4.7/5"
+        "post": "This place has such a variety of beautiful perfumes.",
+        "ratings": "4.9/5"
     }
 ]

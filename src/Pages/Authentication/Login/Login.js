@@ -68,13 +68,10 @@ const Login = () => {
         <div className='container mt-2 w-75 mx-auto'>
             <h2 className='text-center mb-3'>Please Login</h2>
             <Form onSubmit={handleLogin} className='input-fields'>
-                <Form.Group className="mb-2" controlId="formBasicEmail">
-                    <Form.Label >Email address</Form.Label>
-                    <Form.Control ref={emailRef} type="email" name="email" placeholder="Enter Email" required />
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Control ref={emailRef} type="email" name="email" placeholder="Email Address" required />
                 </Form.Group>
-
-                <Form.Group className="mb-2" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control type="password" name="password" placeholder="Password" required />
                 </Form.Group>
                 {errorMessage}

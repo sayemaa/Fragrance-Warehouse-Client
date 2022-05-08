@@ -51,20 +51,16 @@ const SignUp = () => {
         <div className='container mt-2 w-75 mx-auto'>
             <h2 className='text-center mb-3'>Please Sign Up</h2>
             <Form onSubmit={handleSignUp} className='input-fields'>
-                <Form.Group className="mb-2" controlId="formBasicEmail">
-                    <Form.Label >Name</Form.Label>
-                    <Form.Control type="name" name="name" placeholder="Enter Your Name" required />
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Control type="name" name="name" placeholder="Name" required />
                 </Form.Group>
-                <Form.Group className="mb-2" controlId="formBasicEmail">
-                    <Form.Label >Email address</Form.Label>
-                    <Form.Control type="email" name="email" placeholder="Enter Email" required />
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Control type="email" name="email" placeholder="Email Address" required />
                 </Form.Group>
-                <Form.Group className="mb-2" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control type="password" name="password" placeholder="Password" required />
                 </Form.Group>
-                <Form.Group className="mb-2" controlId="formBasicPassword">
-                    <Form.Label>Confirm Password</Form.Label>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control type="password" name="confirmPassword" placeholder="Confirm password" required />
                 </Form.Group>
                 <p className='text-danger'>{error}</p>

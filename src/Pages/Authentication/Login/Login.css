@@ -22,6 +22,10 @@
     color: #FC6D38;
 }
 
+.links:hover{
+    color: cornflowerblue;
+}
+
 /* Responsive */
 
 @media only screen and (max-width:576px) {
