@@ -49,7 +49,7 @@ const Login = () => {
         const password = event.target.password.value;
 
         await signInWithEmailAndPassword(email, password);
-        const { data } = await axios.post('https://fast-lowlands-39390.herokuapp.com/login', { email })
+        const { data } = await axios.post('https://fragrance-warehouse-server.onrender.com/login', { email })
         console.log(data);
         localStorage.setItem('accessToken', data.accessToken);
     }

@@ -20,7 +20,7 @@ const AddItem = () => {
             quantity: data.quantity,
             img: data.img
         }
-        axios.post('https://fast-lowlands-39390.herokuapp.com/inventory', item)
+        axios.post('https://fragrance-warehouse-server.onrender.com/inventory', item)
             .then(response => {
                 // console.log(response);
                 const { data } = response;

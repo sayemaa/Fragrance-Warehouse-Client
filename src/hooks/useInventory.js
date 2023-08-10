@@ -4,7 +4,7 @@ const useInventory = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('https://fast-lowlands-39390.herokuapp.com/inventory')
+        fetch('https://fragrance-warehouse-server.onrender.com/inventory')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])

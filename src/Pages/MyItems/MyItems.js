@@ -17,7 +17,7 @@ const MyItems = () => {
 
         const getMyItems = async () => {
             const email = user?.email;
-            const url = `https://fast-lowlands-39390.herokuapp.com/myitems?email=${email}`;
+            const url = `https://fragrance-warehouse-server.onrender.com/myitems?email=${email}`;
             try {
                 const { data } = await axios.get(url, {
                     headers: {
@@ -41,7 +41,7 @@ const MyItems = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure you want to delete this item?');
         if (proceed) {
-            const url = `https://fast-lowlands-39390.herokuapp.com/inventory/${id}`
+            const url = `https://fragrance-warehouse-server.onrender.com/inventory/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

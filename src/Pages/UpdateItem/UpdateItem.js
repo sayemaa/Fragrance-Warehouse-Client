@@ -14,7 +14,7 @@ const UpdateItem = () => {
     const handleShow = () => setShow(true);
 
     useEffect(() => {
-        const url = `https://fast-lowlands-39390.herokuapp.com/inventory/${itemId}`;
+        const url = `https://fragrance-warehouse-server.onrender.com/inventory/${itemId}`;
 
         fetch(url)
             .then(res => res.json())
@@ -33,7 +33,7 @@ const UpdateItem = () => {
         const delivered = { quantity: newQuantity.toString() }
 
         if (delivered.quantity >= 0) {
-            const url = `https://fast-lowlands-39390.herokuapp.com/inventory/${itemId}`;
+            const url = `https://fragrance-warehouse-server.onrender.com/inventory/${itemId}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -55,7 +55,7 @@ const UpdateItem = () => {
         const addAmount = parseInt(item.quantity) + parseInt(amount)
         const restock = { quantity: addAmount.toString() }
 
-        const url = `https://fast-lowlands-39390.herokuapp.com/inventory/${itemId}`;
+        const url = `https://fragrance-warehouse-server.onrender.com/inventory/${itemId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
